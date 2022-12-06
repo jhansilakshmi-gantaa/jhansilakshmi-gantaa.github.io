@@ -1,0 +1,161 @@
+.flex-header {
+  background-color: blueviolet;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  border-radius: 20px;
+  position: fixed;
+  padding: 10px 20px;
+}
+.navlist a {
+  padding: 20px 30px;
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.flexcontent {
+  display: flex;
+  flex-direction: row;
+  margin:auto;
+}
+.item {
+  margin: auto;
+  
+  color: rgb(7, 2, 77);
+  text-align: center;
+}
+
+img {
+  width: 100%;
+  /* object-fit: contain; */
+}
+#aboutme {
+  padding: 10px 10px;
+  margin:0 auto;
+  background-color: blueviolet;
+  text-align: center;
+  width: 75px;
+  border-radius: 20px;
+}
+#aboutme:hover {
+  transform: scale(1.3);
+  box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.5);
+  transition: transform 0.5s;
+}
+#aboutme a {
+  text-decoration: none;
+  color: white;
+}
+.mainblock {
+  display: grid;
+  grid-template-rows: 4fr 1fr;
+}
+.contact {
+  background-color:blueviolet;
+  padding-left: 50px;
+  color: white;
+}
+.galleryheader h1{
+  text-align: center;
+  color: white;
+  background-color: black;
+  padding:10px;
+  border-radius: 20px;
+}
+.galleryheader a{
+  background-color:indigo;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  color:rgb(231, 213, 188)
+}
+
+.mygallery{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px 20px;
+  margin: 20px 30px;
+}
+.mygallery img:hover{
+  
+    transform: scale(1.3);
+    box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.5);
+    transition: transform 0.5s;
+  
+}
+.aboutmeheader h1{
+  text-align: center;
+  color: white;
+  background-color: indigo;
+  padding:10px;
+  border-radius: 20px;
+}
+.aboutmeheader a{
+  background-color:indigo;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  color:white;
+}
+
+.aboutme{
+  display: flex;
+  flex-direction: row;
+  margin: 10px auto;
+}
+.aboutme div{
+  width: 50%;
+}
+.mydetails div{
+  margin:20px auto;
+  text-align: center;
+  color:rgb(59, 5, 110);
+  background-color: rgb(223, 181, 252);
+  border-radius: 10%;
+  width:80%;
+  padding:50px 40px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  
+}
+
+@media (max-width: 1520px )and (min-width: 800px){
+  .mygallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 20px 20px;
+    margin: 20px 30px;
+  }
+
+}
+
+
+@media (max-width: 800px) {
+  .flexcontent{
+    flex-direction: column;
+    margin-top: 40px;
+    font-size: 1rem;
+  }
+  .aboutme{
+    flex-direction: column-reverse;
+    margin:auto 0px;
+  }
+  .aboutme.mydetails{
+    margin:0px;
+    font-size: 2rem;
+  }
+  .aboutme div{
+    width:90%;
+    height: 50%;
+  }
+  .navlist a{
+    padding:10px 10px;
+  }
+  .flex-header{
+    width: 80%;
+  }
+  .mygallery{
+    display: flex;
+    flex-direction: column;
+    
+  }
+}
